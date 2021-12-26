@@ -1,0 +1,5 @@
+GarbageTest.BasicAssertions 6 0.00364273
+MultTest.Assign 1 0.021902
+MultTest.Mult 0 0
+---
+MultTest.Mult

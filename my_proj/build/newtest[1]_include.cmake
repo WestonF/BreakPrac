@@ -1,0 +1,5 @@
+if(EXISTS "/home/my_proj/build/newtest[1]_tests.cmake")
+  include("/home/my_proj/build/newtest[1]_tests.cmake")
+else()
+  add_test(newtest_NOT_BUILT newtest_NOT_BUILT)
+endif()

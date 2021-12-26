@@ -1,0 +1,7 @@
+add_test( GarbageTest.BasicAssertions /home/my_proj/build/newtest [==[--gtest_filter=GarbageTest.BasicAssertions]==] --gtest_also_run_disabled_tests)
+set_tests_properties( GarbageTest.BasicAssertions PROPERTIES WORKING_DIRECTORY /home/my_proj/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( MultTest.Assign /home/my_proj/build/newtest [==[--gtest_filter=MultTest.Assign]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MultTest.Assign PROPERTIES WORKING_DIRECTORY /home/my_proj/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( MultTest.Mult /home/my_proj/build/newtest [==[--gtest_filter=MultTest.Mult]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MultTest.Mult PROPERTIES WORKING_DIRECTORY /home/my_proj/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( newtest_TESTS GarbageTest.BasicAssertions MultTest.Assign MultTest.Mult)
